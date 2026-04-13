@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+h1 {
+    color: rgb(255, 251, 4);
+    background-color: rgb(0, 0, 0);
+    /* 1 forma de fazer */
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+    /* 2 forma de fazer*/
+    border-bottom-right-radius: 50px;
+    padding: 30px;
+    margin: 20px;
+}
+
+h2 {
+    border-style: dotted;
+    border-color: rgb(18, 216, 206);
+    color: blue;
+    margin: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+h3 {
+    color: rgb(36, 92, 141);
+    background-color: blanchedalmond;
+    border: 40px;
+    border-color: green;
+    border-right-color: black;
+    border-right-width: 20px;
+    border-right-style: dashed;
+    /*segue a ordem Top, Right, Bottom, Left*/
+    padding: 20px 30px 40px 10px;
+    /*1 valor em cima em baixo 2 valor laterais*/
+    margin: 20px 10px;
+    outline: 1px solid rgb(10, 10, 7);
+}
+
+/* Pseudo classe*/
+
+h1:hover {
+    background-color: rgb(122, 0, 0);
+    text-decoration: underline;
+    cursor: grab;
+
+}
+
+/*quando o link esta sendo acessado*/
+a:active {
+    color: blue;
+}
+
+/* O link ja foi visitado*/
+a:visited {}
+
+/*estado inicial*/
+a:link {}
+
+/*Quando o inpumt tem foco*/
+input:focus {}
+
+/* Pseudo Estados*/
+p::first-letter {
+    font-size: larger;
+    color: gray;
+}
+
+h2::before {
+    content: "*";
+    font-size: xx-large;
+    color: blueviolet;
+}
+
+h2::after {
+    content: "*";
+    font-size: xx-large;
+    color: blueviolet;
+}
